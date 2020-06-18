@@ -40,8 +40,7 @@ function insertion_sort(a)
     N = length(a)
     for i = 1:N
         for j = i:-1:2
-            if lower(a[j], a[j-1])
-                exchange(a, j, j - 1)
+            if lower(a[j], a[j-1]) exchange(a, j, j - 1)
             else break
             end
         end
@@ -60,8 +59,7 @@ function shell_sort(a)
     while (h >= 1)
         for i = h:N
             for j = i:-h:h
-                if lower(a[j], a[j-h])
-                    exchange(a, j, j - h)
+                if lower(a[j], a[j-h]) exchange(a, j, j - h)
                 else break
                 end
             end
